@@ -5,7 +5,8 @@
     <title>horizonModuleDemo</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -22,17 +23,14 @@
     <!-- endbuild -->
 </head>
 <body>
-<div class="container" ng-controller="MainController as main">
-
-    <!-- change HORIZON_ID to the id of your public horizon -->
-    <simpleview config="{
-        socialMagazineId: HORIZON_ID,
-        dateRange: 7,
-        pageSize: 10,
-        showImages: true
-    }">
-    </simpleview>
-
+<div class="container" ng-controller="MainController">
+    <div class="row">
+        <a ui-sref="state1">Content 1</a> |
+        <a ui-sref="state2">Content 2</a>
+    </div>
+    <div class="row">
+        <div ui-view></div>
+    </div>
 </div>
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
