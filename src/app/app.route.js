@@ -17,6 +17,11 @@
 				url: "/state2",
 				templateUrl: "app/state2/state2.tpl.html",
 				controllerAs: "State2Controller"
+			})
+			.state('state3', {
+				url: "/state3",
+				templateUrl: "app/state3/state3.tpl.html",
+				controllerAs: "State3Controller"
 			});
 	});
 })();
